@@ -1,0 +1,577 @@
+/* NOTE TO GRADERS: For responsive design - layout changes as follows: 
+(1) navigation stacks on smaller screens, buttons are 'next to each other' on larger views, 
+(2) home page/index page --> text in regular block layout on smaller screen, uses grid on larger screens to take up full view. 
+(3) About us page: on large screens, "polaroid photos" sit next to each other using grid, on smaller screens they're one under the other using flex
+(4) For third layout, used media query to make *gallery* images grayscale and smaller(saves ink!), and removed footer (info (links) not actionable)*/ 
+
+input{
+	display: block;
+	}
+input:focus{
+	background-color: yellow;
+}
+/*.icon::before {
+    display: inline-block;
+    padding: 0 5px;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .circle::before {
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 300; 
+    content: "\f111"; 
+    font-size: 0.5em;
+  }
+
+all font awesome CSS styling code taken from fontawesome website and modified
+note: google fonts used on all pages*/
+
+h1{
+	font-family: 'Noto Sans', sans-serif;
+    font-size: 2em;
+    margin:1em;
+}
+
+
+h2{
+	font-family: 'Noto Sans', sans-serif;
+    font-size: 1.5em;
+    margin:1em;
+}
+
+h3{
+	font-family: 'Noto Sans', sans-serif;
+    font-size: 1.25em;
+    margin:1em;
+}
+
+figcaption{
+	font-family: 'Noto Sans', sans-serif;	
+}
+
+.decoratedfooter{
+	background-color: white;
+	background-image: url("../assets/images/camperwallpaper.png");
+	/*camper wallpaper image credit: Andrea Lauren // camper fabrics // andrealaurendesign.com */
+}
+
+
+.current{
+	text-transform: uppercase;
+	color:#255728;
+}
+
+
+.skip {
+        position: absolute;
+        top: -1000px;
+        left: -1000px;
+        height: 1px;
+        width: 1px;
+        text-align: left;
+        overflow: hidden;
+    }
+    
+    a.skip:active, 
+    a.skip:focus, 
+    a.skip:hover {
+        left: 0; 
+        top: 0;
+        width: auto; 
+        height: auto; 
+        overflow: visible; 
+    }
+
+/* code for lines referring to .skip from https://www.bignerdranch.com/blog/web-accessibility-skip-navigation-links/ */
+
+
+.figcaption{
+	font-family: 'Noto Sans', sans-serif;
+    font-size: 0.75em;
+}
+
+.gallery{
+	display:flex;
+	flex-direction: column;
+	flex-wrap:wrap;
+	margin: auto;
+	justify-content: space-around;
+	min-height: 40%;
+}
+
+.galleryitem{
+	display:flex;
+	width:90%;
+	min-height: 40%;
+	justify-content: center;
+}
+
+figure{
+  width: 100%;
+  display: inline-block;
+  margin: 10px;
+  border: 1px solid #777;
+  padding:8px;
+  box-sizing: border-box;
+}
+figure img{
+	width: 100%;
+}
+
+figure figcaption{
+  text-align: center;
+  padding: 8px 4px;
+}
+
+.iconimg{
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+	width:3em;
+}
+
+.personalsection figure {
+	border:none;
+	max-height: 40%;
+	width:auto;
+}
+
+/* order and unordered list CSS formatting taken from https://www.w3schools.com/css/css_list.asp */ 
+
+@media screen and (max-width: 600px){
+
+
+.gallery{
+	flex-direction: column;
+	flex-wrap:wrap;
+	margin: auto;
+	justify-content: space-around;
+}
+
+.galleryitem{
+	width:90%;
+}
+
+nav li{
+	list-style-type: none;
+	display: flex;
+	border: solid;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: block;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 16px;
+	color:#00E7FF;
+	background-color: white;
+	background-image: url("../assets/images/aluminum.jpg");
+}
+
+footer li{
+	display: flex;
+	border: none;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 16px;
+	color:black;
+	background-color: white;
+	justify-content: space-between;
+}
+
+
+p{
+	font-family: 'Noto Sans', sans-serif;
+    font-size: 1em;
+    display: inline-block;
+    max-width: 90%;
+    padding: 1em;
+    line-height: 2em;
+}
+
+
+ul {
+	position: relative;
+	list-style: none;
+	margin-left: 1em;
+	padding-left: 1.2em;
+	font-family: 'Noto Sans', sans-serif;
+    font-size: 0.8em;
+    margin-bottom: 0.5em;
+    max-width:80%;
+    padding-bottom: 1.5em;
+}
+
+ol{
+	position: relative;
+	list-style: none;
+	margin-left: 1em;
+	padding-left: 1.2em;
+	font-family: 'Noto Sans', sans-serif;
+    font-size: 0.8em;
+    margin-bottom: 0.5em;
+    max-width:80%;
+    padding-bottom: 1.5em;
+
+}
+
+ul li:before {
+	position: absolute;
+	left: 0;
+	margin-left:1em;
+    margin-bottom: 0.5em;
+    padding-top:0.5em;
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 300; 
+    content: "\f111"; 
+    font-size: 0.5em;
+}
+
+ol li:before {
+	position: absolute;
+	left: 0;
+    margin-bottom: 0.5em;
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 300; 
+    content: "\f111"; 
+    font-size: 0.5em;
+
+}
+
+ul li:after{
+	padding-bottom: 2em;
+}
+
+ol li:after{
+	padding-bottom: 2em;
+}
+
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px){
+.gallery{
+	flex-direction: row;
+	flex-wrap:wrap;
+	margin: auto;
+	justify-content: space-around;
+}
+
+.galleryitem{
+	width:50%;
+	align-content: space-between;
+}
+
+nav li{
+	display: inline-flex;
+	border: solid;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 16px;
+	color:#00E7FF;
+	background-color: white;
+	background-image: url("../assets/images/aluminum.jpg");
+}
+
+footer li{
+	display: flex;
+	border: none;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 16px;
+	color:black;
+	background-color: white;
+	justify-content: space-between;
+}
+
+
+p{
+	font-family: 'Noto Sans', sans-serif;
+    font-size: 1em;
+    display: inline-block;
+    max-width: 80%;
+    padding: 0.5em;
+    line-height: 1.5em;
+}
+
+
+ul {
+	position: relative;
+	list-style: none;
+	margin-left: 1em;
+	padding-left: 1.2em;
+	font-family: 'Noto Sans', sans-serif;
+    font-size: 0.8em;
+    margin-bottom: 0.5em;
+    max-width:90%;
+    padding-bottom: 2em;
+
+}
+
+ol{
+	position: relative;
+	list-style: none;
+	margin-left: 1em;
+	padding-left: 1.2em;
+	font-family: 'Noto Sans', sans-serif;
+    font-size: 0.8em;
+    margin-bottom: 0.5em;
+    max-width:90%;
+    padding-bottom: 2em;
+}
+
+ul li:before {
+	position: absolute;
+	left: 0;
+	margin-left:1em;
+	padding-left: 1.2em;
+    margin-bottom: 0.5em;s
+    padding-top:0.5em;
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 300; 
+    content: "\f111"; 
+    font-size: 0.5em;
+}
+
+ol li:before {
+	position: absolute;
+	left: 0;
+    margin-bottom: 0.5em;
+    padding-left: 1.2em;
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 300; 
+    content: "\f111"; 
+    font-size: 0.5em;
+
+}
+
+ul li:after{
+	padding-bottom: 1.5em;
+}
+
+ol li:after{
+	padding-bottom: 1.5em;
+}
+
+}
+
+@media screen and (min-width: 900px){
+.personalsection{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr auto;
+	padding:25px;
+}
+
+#intro{
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+#den{
+	width:100%;
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+
+#burr{
+	width:100%;
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+.qanda{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+}
+
+
+#christening{
+	width:100%;
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+#whyrenovate{
+	width:100%;
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+#cost{
+	width:100%;
+	grid-column-start: 1;
+	grid-column-end: 2;
+}
+#lengthlived{
+	width:100%;
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+
+.gallery{
+	flex-direction: row;
+	flex-wrap:wrap;
+	margin: auto;
+	justify-content: space-around;
+}
+
+.galleryitem{
+	width:33%;
+	align-content: space-between;
+}
+
+nav li{
+	display: flex;
+	border: solid;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 16px;
+	color:#00E7FF;
+	background-color: white;
+	background-image: url("../assets/images/aluminum.jpg");
+}
+
+footer li{
+	display: flex;
+	border: none;
+	padding: 10px 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 16px;
+	color:black;
+	background-color: white;
+	justify-content: space-between;
+}
+
+
+p{
+	font-family: 'Noto Sans', sans-serif;
+    font-size: 1em;
+    display: inline-block;
+    max-width: 80%;
+    padding: 0.5em;
+    line-height: 1.5em;
+}
+
+ul {
+	position: relative;
+	list-style: none;
+	margin-left: 1em;
+	padding-left: 1.2em;
+	font-family: 'Noto Sans', sans-serif;
+    font-size: 0.8em;
+    margin-bottom: 0.5em;
+    max-width:60%;
+    padding-bottom: 1em;
+}
+
+ol{
+	position: relative;
+	list-style: none;
+	margin-left: 1em;
+	padding-left: 1.2em;
+	font-family: 'Noto Sans', sans-serif;
+    font-size: 0.8em;
+    margin-bottom: 0.5em;
+    max-width:60%;
+    padding-bottom: 1em;
+}
+
+ul li:before {
+	position: absolute;
+	left: 0;
+	margin-left:1em;
+    margin-bottom: 0.5em;
+    padding-top:0.5em;
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 300; 
+    content: "\f111"; 
+    font-size: 0.5em;
+}
+
+ol li:before {
+	position: absolute;
+	left: 0;
+    margin-bottom: 0.5em;
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 300; 
+    content: "\f111"; 
+    font-size: 0.5em;
+
+}
+
+
+ul li:after{
+	padding-bottom: 1em;
+}
+
+ol li:after{
+	padding-bottom: 1em;
+}
+
+}
+
+@media print {
+  body {
+    /* IE4-8 and 9 */
+    filter: Gray();
+    /* SVG version for IE10, Chrome 17, FF3.5, Safari 5.2 and Opera 11.6 */
+    filter: url('#grayscale'); 
+    /* CSS3 filter, at the moment Webkit only. Prefix it for future implementations */
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%); /* future-proof */
+    /* code for print grayscale taken from https://stackoverflow.com/questions/17294817/media-queries-color-monochrome-and-printing*/
+  }
+
+.gallery{
+	display:flex;
+	flex-direction: row;
+	flex-wrap:wrap;
+	margin: auto;
+	justify-content: space-around;
+}
+
+.galleryitem{
+	display:flex;
+	max-width:25%;
+	height:auto;
+}
+
+img{
+	/* IE4-8 and 9 */
+    filter: Gray();
+    /* SVG version for IE10, Chrome 17, FF3.5, Safari 5.2 and Opera 11.6 */
+    filter: url('#grayscale'); 
+    /* CSS3 filter, at the moment Webkit only. Prefix it for future implementations */
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%); /* future-proof */
+    /* code for print grayscale taken from https://stackoverflow.com/questions/17294817/media-queries-color-monochrome-and-printing*/
+}
+
+footer li{
+	display:none;
+}
+}
