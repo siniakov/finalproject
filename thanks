@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title >Contact Us!</title>
+    
+</head>
+<body>
+<a href="#content" class="skip">Skip to content</a>
+<br>
+<!-- Code for 'skip to content' link taken from https://www.bignerdranch.com/blog/web-accessibility-skip-navigation-links/ --> 
+<header>
+    <img class = "iconimg" src="assets/images/camper.png" alt = "stylized camper icon"/>
+    <nav>
+        <ul>
+            <li><a href = "index.html">About the Bebop</a></li>
+            <li><a href = "buildprocess.html">Initial Build</a></li>
+            <li><a href = "iterativedesign.html">Iteration/Troubleshooting</a></li>
+            <li><a href = "aboutus.html">About Us</a></li>
+            <li><a href = "contactus.html" class = "current">Contact</a></li>
+
+        </ul>
+    </nav>
+
+    <h1>Burden and the Bebop: Tiny Camper Life!</h1>
+
+</header>
+<main>
+<div id = "content">
+<h2> Thank you!</h2>
+
+<div class = "galleryitem"><figure><img src="assets/images/protectivegear.jpg" alt="two individuals wearing protective jumpsuits and respirators stand holding paintbrushes"/><figcaption>Burr and Den standing and looking silly for the camera, suited up with all the protective gear they can muster and ready to work!</figcaption></figure></div>
+
+<p> Thanks for reaching out! We'll get back to you ASAP! </p>
+</div>
+
+</main>
+<footer>
+    <div class="decoratedfooter">
+    <ul>
+        <li><a href = "index.html">About the Bebop</a></li>
+        <li><a href = "buildprocess.html">Initial Build</a></li>
+        <li><a href = "iterativedesign.html">Iteration/Troubleshooting</a></li>
+        <li><a href = "aboutus.html" class = "current">About Us</a></li>
+        <li><a href = "contactus.html">Contact</a></li>
+    </ul>
+    </div>
+</footer>
+</body>
+</html>
