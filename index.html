@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138368573-1"></script>
@@ -26,23 +27,20 @@
 <br>
 <!-- Code for 'skip to content' link taken from https://www.bignerdranch.com/blog/web-accessibility-skip-navigation-links/ --> 
 <header>
-    <div class = "dropdown">
-    <nav role = "navigation" aria-label="Main Menu">
-        <!-- <button class="btn btn-default dropdown-toggle" type="button" id="button";
-            aria-haspopup="true" aria-expanded="false" aria-controls="menu" aria-label="Navigation">
-            <img class = "iconimg" src="assets/images/camper.png" alt = "stylized camper icon"/>
-            <span class="caret"></span>
-        </button> -->
-        <ul class="dropdown-menu" id="menu" tabindex="-1">
-            <li><a href = "index.html" class = "current">About the Bebop</a></li>
+    <img class = "iconimg" src="assets/images/camper.png" alt = "stylized camper icon"/>
+    <div class = "topnav" id = "siteTopnav">
+    <nav>
+        <ul>
+            <li><a href = "index.html" class = "active">About the Bebop</a></li>
             <li><a href = "buildprocess.html">Initial Build</a></li>
             <li><a href = "iterativedesign.html">Iteration/Troubleshooting</a></li>
             <li><a href = "aboutus.html">About Us</a></li>
             <li><a href = "contactus.html">Contact</a></li>
-
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i> </a>
         </ul>
     </nav>
-</div>
+    </div>
 
     <h1>Burden and the Bebop: Tiny Camper Life!</h1>
 
