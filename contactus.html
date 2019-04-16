@@ -55,14 +55,33 @@
 
 <div class = "galleryitem"><figure><img src="assets/images/teabreak.jpg" alt="a cup of tea sits on a patio table in front of an empty lakeshore"/><figcaption>Both of us love a great cup of tea; we went through a lot of it on lunch breaks!</figcaption></figure></div>
 
-<form action="https://formspree.io/burdenandthebebop@gmail.com" method="POST">
-        <label for = "name">Name:<input type="text" name = "name" id = "name" placeholder="Name Alias" ="Alias 79856"></label>
-        <label for = "email"> Email:<input type="email"  required name = "email" id = "email" placeholder = "a@b.com"></label>
-        <label for = "message"> Message:<input type="textarea" required name = "message" id = "message" placeholder="Ahoy, mateys!"> </label>
-        <label for "tel">Phone number:<input type="tel" name = "phonenumber" id = "tel" placeholder = "248.111.1111"></label>
-        <input type="submit" value = "Let's chat!">
 
-</form> 
+
+<div class="container">  
+  <form id="contact" action="https://formspree.io/burdenandthebebop@gmail.com" method="POST">
+    <h3>Reach out!</h3>
+    <h4>Let's talk about tiny living, campers, and homesteading!</h4>
+    <fieldset>
+
+      <label for = "name">Name:<input name = "name" id = "name" placeholder="Tom Robinson" type="text" tabindex="1" required autofocus></label>
+    </fieldset>
+
+    <fieldset>
+      <label for = "email"> Email:<input placeholder="Robinesque@gmail.com" name = "email" id = "email" type="email" tabindex="2" required></label>
+    </fieldset>
+
+    <fieldset>
+      <label for = "message"> Message: <textarea name = "message" id = "message"  placeholder="Type your message here...." tabindex="5" required></textarea>
+    </fieldset>
+
+    <fieldset>
+        <button name="submit" type="submit" id="contact-submit" value = "Let's chat!" id = "contact" data-submit="Let's chat!">Submit</button>
+    </fieldset>
+    <p class="copyright">Designed by <a href="https://colorlib.com" target="_blank" title="Colorlib">Colorlib</a></p>
+  </form>
+</div>
+
+
 
 <p>Note: please be patient with us! It may take us a few days to respond; we appreciate your patience!</p>
 </div>
