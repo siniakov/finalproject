@@ -16,6 +16,7 @@
 
   gtag('config', 'UA-138368573-1');
 </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <title >Living Tiny! Burden and the Bebop</title>
     
@@ -25,9 +26,14 @@
 <br>
 <!-- Code for 'skip to content' link taken from https://www.bignerdranch.com/blog/web-accessibility-skip-navigation-links/ --> 
 <header>
-    <img class = "iconimg" src="assets/images/camper.png" alt = "stylized camper icon"/>
-    <nav>
-        <ul>
+    <div class = "dropdown">
+    <nav role = "navigation" aria-label="Main Menu">
+        <!-- <button class="btn btn-default dropdown-toggle" type="button" id="button";
+            aria-haspopup="true" aria-expanded="false" aria-controls="menu" aria-label="Navigation">
+            <img class = "iconimg" src="assets/images/camper.png" alt = "stylized camper icon"/>
+            <span class="caret"></span>
+        </button> -->
+        <ul class="dropdown-menu" id="menu" tabindex="-1">
             <li><a href = "index.html" class = "current">About the Bebop</a></li>
             <li><a href = "buildprocess.html">Initial Build</a></li>
             <li><a href = "iterativedesign.html">Iteration/Troubleshooting</a></li>
@@ -36,6 +42,7 @@
 
         </ul>
     </nav>
+</div>
 
     <h1>Burden and the Bebop: Tiny Camper Life!</h1>
 
@@ -83,5 +90,6 @@
     </ul>
     </div>
 </footer>
+<script src="javascript.js"></script>
 </body>
 </html>
