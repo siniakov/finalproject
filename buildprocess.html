@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://vjs.zencdn.net/7.4.1/video-js.css" rel="stylesheet">
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138368573-1"></script>
 <script>
@@ -28,7 +29,7 @@
 <header>
     <img class = "iconimg" src="assets/images/camper.png" alt = "stylized camper icon"/>
         <h1>Burden and the Bebop: Tiny Camper Life!</h1>
-    <div class = "topnav" id = "siteTopnav">
+    <div class = "topnav" id = "siteTopnav" aria-label="Main Menu">
     <nav>
         <ul>
             <li><a href = "index.html" >About the Bebop</a></li>
@@ -68,6 +69,18 @@
 </ol>
 <p> Note 1: We started doing paint removal in mid-May when it was still fairly cool outside (~50-60 degrees). The warmer the temperature in which the stripper is applied, the faster and easier it is to scrape the Zolatone off. Once we hit 80-90 degrees outside, we barely even had to apply pressure – the gel ate through the Zolatone pretty easily. Unfortunately, that also meant it ate through our protective gear more quickly. We went through 3-4 sets of jumpsuits over the course of the project. </p>
 <p> Note 2: We worked with a lot of protective gear, including fullbody jumpsuits, sturdy rubber boots, heavy-duty gloves, eye goggles, and properly-classed respirators. The respirators are particularly important – if they fail, bad things happen.</p>
+
+
+<div class ="video galleryitem"><video id='stompingaround' class='video-js' controls preload='auto' width='640' height='264'
+  poster='assets/images/protectivegear.jpg' data-setup='{}'>
+    <source src='assets/awkwardwalk.mp4' type='video/mp4' alt = "person stomps awkwardly towards a camper in oversized galoshes and a coverall suit" aria-label="awkward walking in ill-fitting protective gear">
+    <p class='vjs-no-js'>
+      To view this video please enable JavaScript, and consider upgrading to a web browser that
+      <a href='https://videojs.com/html5-video-support/' target='_blank'>supports HTML5 video</a>
+    </p>
+  </video>
+</div>
+
 
 <h3>Structure</h3>
 <p>After the walls and bulkhead were prepped, we began installing flooring on top of the subflooring (watertight vinyl click-plank boards, made to look like dark wood. Very durable, but prone to scratching if you drag something like casters or a chair over it).</p>
@@ -191,5 +204,6 @@
     </div>
 </footer>
 <script src="javascript.js"></script>
+ <script src='https://vjs.zencdn.net/7.4.1/video.js'></script>
 </body>
 </html>

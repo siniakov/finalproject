@@ -15,6 +15,13 @@
 */
 
 /*below code for the contact form*/
+
+.video{
+	display: inline-block; 
+    justify-content: center;
+
+}
+
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
 * {
   margin: 0;
