@@ -688,7 +688,7 @@ ol li:after{
 
 }
 
-@media screen and (min-width: 900px){
+@media screen and (min-width: 200px){
 .personalsection{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
