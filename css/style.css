@@ -186,7 +186,7 @@ fieldset {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 /* Change the color of links on hover */
@@ -198,7 +198,7 @@ fieldset {
 /* Add an active class to highlight the current page */
 .active {
   background-color: #EA3457;
-  color: black;
+  color: white;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
