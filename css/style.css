@@ -198,7 +198,7 @@ fieldset {
 /* Add an active class to highlight the current page */
 .active {
   background-color: #EA3457;
-  color: #000000;
+  color: black;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
