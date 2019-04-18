@@ -196,7 +196,7 @@ fieldset {
 }
 
 /* Add an active class to highlight the current page */
-.active {
+.topnav a .active {
   background-color: #FFE600;
   color: #602F75;
 }
