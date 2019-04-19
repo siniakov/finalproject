@@ -458,7 +458,9 @@ figure figcaption{
 /* order and unordered list CSS formatting taken from https://www.w3schools.com/css/css_list.asp */ 
 
 @media screen and (max-width: 600px){
-
+.qrcode{
+	display:none;
+}
 
 .gallery{
 	flex-direction: column;
@@ -575,6 +577,10 @@ ol li:after{
 }
 
 @media screen and (min-width: 600px) and (max-width: 900px){
+
+.qrcode{
+	display:none;
+}	
 .gallery{
 	flex-direction: row;
 	flex-wrap:wrap;
@@ -689,6 +695,9 @@ ol li:after{
 }
 
 @media screen and (min-width: 800px){
+.qrcode{
+	display:none;
+}	
 .personalsection{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -856,6 +865,10 @@ ol li:after{
 }
 
 @media print {
+  qrcode{
+  	display:flex;
+  }
+
   body {
     /* IE4-8 and 9 */
     filter: Gray();
