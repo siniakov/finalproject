@@ -865,8 +865,8 @@ ol li:after{
 }
 
 @media print {
-  qrcode{
-  	display:flex;
+  .qrcode{
+  	display:inline-block;
   }
 
   body {
