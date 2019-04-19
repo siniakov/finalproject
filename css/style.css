@@ -598,9 +598,9 @@ ol li:after{
 	border-radius: 16px;
 	color:#00E7FF;
 	background-color: white;
-	background-image: url("../assets/images/aluminum.jpg"); */
+	background-image: url("../assets/images/aluminum.jpg"); 
 }
-
+*/ 
 
 footer li{
 	display: flex;
@@ -658,7 +658,7 @@ ul li:before {
 	left: 0;
 	margin-left:1em;
 	padding-left: 1.2em;
-    margin-bottom: 0.5em;s
+    margin-bottom: 0.5em;
     padding-top:0.5em;
     font-family: "Font Awesome 5 Free"; 
     font-weight: 300; 
@@ -688,7 +688,7 @@ ol li:after{
 
 }
 
-@media screen and (min-width: 200px){
+@media screen and (min-width: 800px){
 .personalsection{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
